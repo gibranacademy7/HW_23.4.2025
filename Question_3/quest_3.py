@@ -8,7 +8,7 @@ The model seems to be overfitting
 Which regularization technique would help reduce the variance and prevent overfitting in this scenario?
 L1 regularization (Lasso)
 L2 regularization (Ridge)
-
+============================================
 ANSWER:
 
 where the linear regression model is overfitting, shows high variance,
@@ -26,8 +26,35 @@ About L1 (Lasso):
 L1 regularization (Lasso) tends to produce sparse models by setting some coefficients exactly to zero.
 It's great when you want feature selection,
 but it may not be as effective as L2 in reducing variance when overfitting is the main issue.
+*********************************************************************************************
+*********************************************************************************************
 
+QUESTION 2:
 
+You are working with a linear regression model that includes many input features,
+and you suspect that some features are irrelevant (they contribute little to the prediction).
+You want to:
+Reduce the number of features used by the model
+Encourage the model to automatically set some coefficients to zero (effectively removing those features)
+Which regularization method should you use?
+L1 regularization (Lasso)
+L2 regularization (Ridge)
+===============================================
 
+ANSWER:
 
+where you want to reduce the number of features and have the model automatically
+set some coefficients to zero—the best regularization technique is:
+***** L1 regularization (Lasso) *****
+
+EXPLANATION:
+
+L1 regularization adds a penalty equal to the absolute value of the coefficients.
+It has the effect of shrinking some coefficients exactly to zero,
+which effectively removes those features from the model.
+This makes it ideal for feature selection, especially when you suspect that some features are irrelevant.
+
+About L2 (Ridge)?
+L2 regularization shrinks coefficients toward zero, but never exactly to zero.
+It helps reduce overfitting, but it does not perform feature selection.
 """
