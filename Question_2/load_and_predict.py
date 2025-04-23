@@ -13,3 +13,7 @@ prediction = model.predict(X_new)
 
 # Step 4: Show the result
 print(f"Prediction for {x_input}: {prediction[0]:.2f}")
+
+# Output Example:
+# Enter a number to predict the result: 40
+# Prediction for 40.0: 42.87
