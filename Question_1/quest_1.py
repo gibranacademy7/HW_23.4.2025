@@ -34,3 +34,9 @@ print(f"MSE: {mse:.3f}")
 
 rmse = np.sqrt(mse)
 print(f"RMSE: {rmse:.3f}")
+
+
+# Output:
+# MAE: 0.415
+# MSE: 0.187
+# RMSE: 0.433
